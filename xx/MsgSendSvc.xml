@@ -1,0 +1,22 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:x="http://www.w3.org/2001/XMLSchema" xmlns:d="http://esb.spdbbiz.com/metadata" xmlns:s="http://esb.spdbbiz.com/services/{{serverid}}">
+	<soap:Header>
+		<s:RspHeader>
+			<d:Mac />
+			<d:MacOrgId />
+			<d:MsgId />
+			<d:TargetSysId />
+		</s:RspHeader>
+	</soap:Header>
+	<soap:Body>
+		<s:RspMsgSendSvc>
+			<s:RspSvcHeader>
+				<s:TranDate />
+				<s:TranTime />
+				<s:BackendSeqNo />
+				<s:BackendSysId />
+				<s:ReturnCode>000000000000</s:ReturnCode>
+				<s:ReturnMsg>Powered By Mock</s:ReturnMsg>
+			</s:RspSvcHeader>
+		</s:RspMsgSendSvc>
+	</soap:Body>
+</soap:Envelope>

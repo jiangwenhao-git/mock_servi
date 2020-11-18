@@ -1,0 +1,73 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:x="http://www.w3.org/2001/XMLSchema" xmlns:d="http://esb.spdbbiz.com/metadata" xmlns:s="http://esb.spdbbiz.com/services/{{serverid}}">
+	<soap:Header>
+		<s:RspHeader>
+			<d:Mac />
+			<d:MacOrgId />
+			<d:MsgId />
+			<d:TargetSysId />
+		</s:RspHeader>
+	</soap:Header>
+	<soap:Body>
+	<s:RspLmtInfoQry>
+	<s:RspSvcHeader>
+		<s:TranDate></s:TranDate>
+		<s:TranTime></s:TranTime>
+		<s:BackendSeqNo></s:BackendSeqNo>
+		<s:BackendSysId></s:BackendSysId>
+		<s:ReturnCode>000000000000</s:ReturnCode>
+		<s:ReturnMsg>交易成功</s:ReturnMsg>
+		<s:GlobalSeqNo></s:GlobalSeqNo>
+		<s:LangCode></s:LangCode>
+		<s:TranCode></s:TranCode>
+		<s:PIN></s:PIN>
+		<s:KeyVersionNo></s:KeyVersionNo>
+		<s:TargetAdr></s:TargetAdr>
+		<s:SourceAdr></s:SourceAdr>
+		<s:MsgEndFlag></s:MsgEndFlag>
+		<s:MsgSeqNo></s:MsgSeqNo>
+		<s:LinkTranCode></s:LinkTranCode>
+		<s:TranSerialNo></s:TranSerialNo>
+		<s:InttrId>04</s:InttrId>
+		<s:InttrTranDate>20170910</s:InttrTranDate>
+		<s:InttrTranTime>155056</s:InttrTranTime>
+		<s:InttrTranSeqNo>110014320003</s:InttrTranSeqNo>
+		<s:InttrAcntgDate>20170910</s:InttrAcntgDate>
+		<s:RcvrId>02</s:RcvrId>
+		<s:HUBSeqNo>201708240000000004555177</s:HUBSeqNo>
+		<s:HUBStrtTime>153828</s:HUBStrtTime>
+		<s:HUBEndTime>153828</s:HUBEndTime>
+		<s:RcvrTranSeqNo>000000000598724</s:RcvrTranSeqNo>
+		<s:RcvrTranStrtTime>153828</s:RcvrTranStrtTime>
+		<s:RcvrTranEndTime>153828</s:RcvrTranEndTime>
+		<s:RcvrTranStatus></s:RcvrTranStatus>
+		<s:LstExecNode>1</s:LstExecNode>
+		<s:HUBRetCode>000000</s:HUBRetCode>
+		<s:AplRetCode></s:AplRetCode>
+		<s:AplRetInfo>交易成功</s:AplRetInfo>
+	</s:RspSvcHeader>
+	<s:SvcBody>
+		<s:DataSetId>20170824153828</s:DataSetId>
+		<s:QryPageNo1>1</s:QryPageNo1>
+		<s:TotPageNo1>1</s:TotPageNo1>
+		<s:RetLmtDtNum>1</s:RetLmtDtNum>
+		<s:LmtQryRsltInfo>
+			<s:LmtNo1>2017000185</s:LmtNo1>
+			<s:LmtType>N</s:LmtType>
+			<s:LmtLevel>X</s:LmtLevel>
+			<s:LmtUsTy>R</s:LmtUsTy>
+			<s:LmtCcy>HKD</s:LmtCcy>
+			<s:MaxLmt>50000000000000.00</s:MaxLmt>
+			<s:TotLmtFrzFlg>Y</s:TotLmtFrzFlg>
+			<s:FreezeAmt>0.00</s:FreezeAmt>
+			<s:TransAmt>47187185557313.25</s:TransAmt>
+			<s:EffectDate>20170525</s:EffectDate>
+			<s:ExpiredDate>99991231</s:ExpiredDate>
+			<s:PrmsLmtFlg>NNYNNNNN</s:PrmsLmtFlg>
+			<s:AuthrTp>10000000000000000000000000000000</s:AuthrTp>
+			<s:TopLmtNo>2017000185</s:TopLmtNo>
+			<s:ClientNo>190020</s:ClientNo>
+		</s:LmtQryRsltInfo>
+	</s:SvcBody>
+	</s:RspLmtInfoQry>
+	</soap:Body>
+</soap:Envelope>

@@ -1,0 +1,71 @@
+
+DT00 普发宝消费签约：
+2019-06-03 09:24:29,224[http][63337441559525069193][INFO]-转发地址:http://121.35.255.69:17002/spdbank/account/openacco
+2019-06-03 09:24:29,240[http][63337441559525069193][INFO]-入参:
+[   sign_key_index=1,
+    user_type=1,
+    sign_type=MD5,
+    input_charset=GBK, 
+    bank_buyer_name=浦东发展银行,
+    bank_fund_no=77030000000100900,
+    buyer_name=浦发1050282295,
+    bank_kind_no=010,
+    channel_id=SPDBANK,
+    transaction_id=XP0000269392,
+    service_version=1.0,
+    sign=97174F7B518CDBFBF13782A6A595233F,
+    mobile_number=10502822950,
+    address=浦发测试用地址,
+    buyer_cert_type=0,
+    branch_bank_name=浦东发展银行,
+    buyer_cert_no=652325199108178351,
+    partner=1300090001,
+    bank_card_no=6217931576746047,
+    acc_time=20190603092759
+]
+2019-06-03 09:24:31,380[http][63337441559525069193][INFO]-httpStatus:200
+2019-06-03 09:24:31,396[http][63337441559525069193][INFO]-出参:
+<?xml version="1.0" encoding="GBK" standalone="yes"?>
+<root>
+    <attach></attach>
+    <bank_fund_no>77030000000100900</bank_fund_no>
+    <input_charset>GBK</input_charset>
+    <modify_time>20190603092759</modify_time>
+    <partner>1300090001</partner>
+    <retcode>0000</retcode>
+    <retmsg>成功</retmsg>
+    <service_version>1.0</service_version>
+    <sign>FCA33562950FEF5C732579D2F830EFB6</sign>
+    <sign_key_index>1</sign_key_index>
+    <sign_type>MD5</sign_type>
+    <sp_trans_id>00999000000656024</sp_trans_id>
+</root>
+
+
+DT01 普发宝消费解约：
+2019-05-30 16:02:29,813[http][80637271559203349813][INFO]-转发地址:http://121.35.255.69:17002/spdbank/account/closeacco
+2019-05-30 16:02:29,813[http][80637271559203349813][INFO]-入参:[sign=C3A83EC1CD380FC7036AB7B6FF829418, sign_key_index=1, sp_trans_id=00999000000650085, buyer_cert_type=0, sign_type=MD5, input_charset=GBK, buyer_cert_no=411400198704074574, buyer_name=浦发1701708106, acc_time=20190530160421, transaction_id=000000100315, service_version=1.0, channel_id=SPDBANK]
+2019-05-30 16:02:30,188[http][80637271559203349813][INFO]-httpStatus:200
+2019-05-30 16:02:30,188[http][80637271559203349813][INFO]-出参:
+<?xml version="1.0" encoding="GBK" standalone="yes"?>
+<root>
+    <attach></attach>
+    <channel_id>SPDBANK</channel_id>
+    <input_charset>GBK</input_charset>
+    <modify_time>20190530160144</modify_time>
+    <out_trade_no>201201905300000000820</out_trade_no>
+    <retcode>0000</retcode>
+    <retmsg>0000</retmsg>
+    <service_version>1.0</service_version>
+    <sign>1C98C02F84F3A87C05DD3E6A9C640E97</sign>
+    <sign_key_index>1</sign_key_index>
+    <sign_type>MD5</sign_type>
+    <sp_trans_id>00999000000650085</sp_trans_id>
+    <sp_user></sp_user>
+    <trade_status>0</trade_status>
+    <transaction_id>000000100315</transaction_id>
+</root>
+
+
+发送地址：在普法宝服务器/spdbpfb/config/config.properties 文件，fund.company.HTTP=http://10.112.53.17  行
+发送端口号：在普法宝数据库tblFundManagerInfo，字段openport,closeport 分别配置签约的端口号和解约的端口号，字段SIGNKEY 用例计算MD5值。

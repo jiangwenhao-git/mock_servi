@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectResources">
+    <resource url="http://esb.spdbbiz.com/metadata" location="$PROJECT_DIR$" />
+    <resource url="http://esb.spdbbiz.com/services/S120030432" location="$PROJECT_DIR$" />
+    <resource url="http://schemas.xmlsoap.org/soap/encoding/" location="$PROJECT_DIR$" />
+    <resource url="http://schemas.xmlsoap.org/soap/envelope/" location="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.8" project-jdk-type="Python SDK" />
+  <component name="PyCharmProfessionalAdvertiser">
+    <option name="shown" value="true" />
+  </component>
+</project>

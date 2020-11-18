@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<p>
+	<br />
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<br />
+</p>
+<h3>
+	<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>这是一个测试mock挡板对HTTP请求报文的网页</em></span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <em>方法</em><em>：</em><span style="font-size:32px;color:#DFC5A4;">GET</span>
+</h3>
+<p style="text-align:center;">
+	<span style="color:#8C8C8C;font-style:italic;">一旦点击连接就会访问视图函数</span><span style="color:#8C8C8C;font-style:italic;font-family:&quot;">search</span><span style="color:#8C8C8C;font-style:italic;">，通过视图函数来反转</span><span style="color:#8C8C8C;font-style:italic;font-family:&quot;">URL</span><span style="color:#8C8C8C;font-style:italic;">，</span><span style="color:#8C8C8C;font-style:italic;font-family:&quot;">URL</span><span style="color:#8C8C8C;font-style:italic;">的参数是</span><span style="color:#8C8C8C;font-style:italic;font-family:&quot;">q</span><span style="color:#8C8C8C;font-style:italic;">，值为</span><span style="color:#8C8C8C;font-style:italic;font-family:&quot;">hello</span><span style="color:#8C8C8C;font-style:italic;">：</span>
+</p>
+<p style="text-align:center;">
+	<span style="color:#8C8C8C;font-style:italic;">就会返回</span><span style="color:#8C8C8C;font-style:italic;font-family:&quot;">url:http://127.0.0.1:5000/search/?q=hello</span>
+</p>
+<p>
+	<br />
+</p>
+<p style="text-align:center;">
+	<a href="{{ url_for('search',q='hello') }}">&nbsp;<u></u>跳转到搜索页面</a>
+</p>
+<p>
+	<br />
+</p>
+<h1 style="text-align:center;">
+	<span style="color:#999999;">powered by mock...</span>
+</h1>
+<p>
+	<br />
+</p>
+</body>
+</html>
